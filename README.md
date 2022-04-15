@@ -39,6 +39,6 @@
      A Pokedex não foi finalizada.
      Em falta estão o return para a activity_main.xml após pesquisar um pokemon na lupa (search);
      A falta de filtrar os Pokemons por tipo.
-     Foi tentada uma refatoração para Coroutines mas sem sucesso(com isso o aplicativo está lento).
+     
      
      

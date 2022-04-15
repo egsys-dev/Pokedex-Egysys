@@ -6,14 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import me.dio.pokedexegysysteste.R
-import me.dio.pokedexegysysteste.commom.Constants.NUMBER
+import me.dio.pokedexegysysteste.commom.Constants.IMAGE
+import me.dio.pokedexegysysteste.commom.Constants.NAME
+import me.dio.pokedexegysysteste.commom.Constants.POSITION
 import me.dio.pokedexegysysteste.databinding.PokemonDatailBinding
 import me.dio.pokedexegysysteste.domain.Pokemon
 import me.dio.pokedexegysysteste.viewmodel.PokemonViewModel
 import me.dio.pokedexegysysteste.viewmodel.PokemonViewModelFactory
-import kotlin.random.Random
-
 
 class PokemonDetail : AppCompatActivity() {
 
@@ -28,22 +27,56 @@ class PokemonDetail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = PokemonDatailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        loadPokemonPosition()
-        loadPokemons()
+        viewModel.pokemons.observe(this, Observer {
+            loadPokemons(it)
+        })
         supportActionBar?.hide()
-        loadPokemonPosition()
+        viewModel.pokemons.observe(this, Observer {
+            loadPokemonPosition(it)
+        })
     }
-
     @SuppressLint("setText")
-    private fun loadPokemons() {
-        Glide.with(this).load(intent.getStringExtra(NUMBER)).into(binding.ivPokemonImage)
-    }
-    private fun loadPokemonPosition(){
-        Glide.with(this).load(intent.getStringExtra(NUMBER)).into(binding.ivPokemonImage)
-        binding.tvPokemonName.setText(intent.getStringExtra("meuOvo"))
+    private fun loadPokemons(pokemons : List<Pokemon?>) {
 
-    }
+        val image = intent.getStringExtra(IMAGE)
+        val name = intent.getStringExtra(NAME)
+        val position = intent.getStringExtra(POSITION)!!.toInt()
 
+        val type1 = pokemons[position]!!.types[0].name
+        val typeSize = pokemons[position]!!.types.size
+
+        with(binding) {
+            tvPokemonName.setText(name)
+            tvType.setText(type1)
+            if(typeSize > 1){
+                val type2 = pokemons[position]!!.types[1].name
+                tvType2.setText(type2)
+            }
+        }
+        Glide.with(this)
+            .load(image)
+            .into(binding.ivPokemonImage)
+    }
+    private fun loadPokemonPosition(pokemons : List<Pokemon?>) {
+        val image = intent.getStringExtra(IMAGE)
+        val name = intent.getStringExtra(NAME)
+        val position = intent.getStringExtra(POSITION)!!.toInt()
+
+        val type1 = pokemons[position]!!.types[0].name
+        val typeSize = pokemons[position]!!.types.size
+
+        with(binding) {
+            tvPokemonName.setText(name)
+            tvType.setText(type1)
+            if(typeSize > 1){
+                val type2 = pokemons[position]!!.types[1].name
+                tvType2.setText(type2)
+            }
+        }
+        Glide.with(this)
+            .load(image)
+            .into(binding.ivPokemonImage)
+    }
 }
 
 

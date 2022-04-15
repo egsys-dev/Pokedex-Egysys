@@ -8,7 +8,9 @@
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/bug_type_shape.xml" value="0.259" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/dark_type_shape.xml" value="0.196" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/fairy_type_shape.xml" value="0.348" />
+        <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/fighting_type_shape.xml" value="0.3505" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/ic_launcher_background.xml" value="0.259" />
+        <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/ic_search.xml" value="0.3745" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/normal_type_shape.xml" value="0.3475" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/psychic_type_shape.xml" value="0.3815" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/rock_type_shape.xml" value="0.3815" />
@@ -16,11 +18,13 @@
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/drawable/water_type_shape.xml" value="0.3815" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/activity_splash.xml" value="0.38125" />
+        <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/ic_search.xml" value="0.38125" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/pokemon_datail.xml" value="0.67" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/pokemon_intro.xml" value="0.38125" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/pokemon_item.xml" value="0.5" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/layout/pokemon_splash.xml" value="0.33" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/menu/intro.xml" value="0.38125" />
+        <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/menu/menu.xml" value="0.33" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/menu/menu_details.xml" value="0.38125" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/menu/menu_nav.xml" value="0.38125" />
         <entry key="..\:/Users/bruno/AndroidStudioProjects/PokedexEgysysTeste/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2625" />

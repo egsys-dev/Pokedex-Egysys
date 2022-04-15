@@ -5,10 +5,14 @@ import androidx.lifecycle.ViewModel
 import me.dio.pokedexegysysteste.api.model.PokemonRepository
 import me.dio.pokedexegysysteste.domain.Pokemon
 
-
-
 class PokemonViewModel : ViewModel() {
     var pokemons = MutableLiveData<List<Pokemon?>>()
+
+    fun filterPokemon(filter: String) {
+        pokemons.value = pokemons.value?.filter {
+            it?.name!!.contains(filter.lowercase())
+        }
+    }
 
     init {
         Thread(Runnable {
@@ -16,7 +20,7 @@ class PokemonViewModel : ViewModel() {
         }).start()
     }
 
-    private fun loadPokemons() {
+    fun loadPokemons() {
         val pokemonsApiResult = PokemonRepository.listPokemons()
 
         pokemonsApiResult?.results?.let {

@@ -20,6 +20,7 @@ data class PokemonApiResult(
     val types: List<PokemonTypeSlot>
 )
 
+
 data class PokemonTypeSlot(
     val slot: Int,
     val type: PokemonType

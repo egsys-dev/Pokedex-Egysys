@@ -7,30 +7,17 @@
 
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:elevation="100dp"
-        android:text="Weight"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
-        app:layout_constraintTop_toBottomOf="@+id/pokemonHeight" />
-
-
-    <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="16dp"
         android:elevation="100dp"
         android:text="Type"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/ivShapeType"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
         app:layout_constraintTop_toTopOf="@+id/ivShapeType" />
 
     <TextView
@@ -38,63 +25,27 @@
         android:layout_width="136dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
         android:elevation="100dp"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/ivShapeType"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:elevation="100dp"
-        android:text="Height"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
-        app:layout_constraintTop_toTopOf="@+id/ivShapeType" />
-
-    <TextView
-        android:id="@+id/pokemonWeight"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="8dp"
-        android:elevation="100dp"
-        android:textColor="#BA000053"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/tvType2"
         android:layout_width="136dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
         android:elevation="100dp"
         android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/ivShapeType"
+        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
         app:layout_constraintTop_toBottomOf="@+id/tvType" />
 
-    <TextView
-        android:id="@+id/pokemonHeight"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="8dp"
-        android:elevation="100dp"
-        android:textColor="#BA000053"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/ivShapeType"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 
     <TextView
         android:id="@+id/tvPokemonName"

@@ -1,6 +1,5 @@
 package me.dio.pokedexegysysteste.api
 
-
 import com.google.gson.annotations.SerializedName
 
 data class Result(
